@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Lim | Computer Engineer & Back-End Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="home.html" class="logo"><strong>Marc Lim</strong></a>
+            
+            <div class="nav-console">
+                <a href="about.html">About</a>
+                <a href="projects.html">Experience & Projects</a>
+                
+                <div class="nav-divider"></div>
+                <button id="raw-toggle">&gt;_ JSON</button>
+                
+                <div class="nav-divider"></div>
+                
+                <div class="system-health-bar">
+                    <div class="pulse-dot"></div>
+                    <span>SYS_OK // <span id="system-ping">16ms</span></span>
+                </div>
+                
+                <div class="nav-divider"></div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Hero Intro Section -->
+        <header style="margin-bottom: 3rem;">
+            <h1 style="margin-top: 2rem;">Hi, I'm Marc Lim</h1>
+            <p style="font-size: 1.15rem; color: var(--text-color); margin-bottom: 2rem; opacity: 0.9; line-height: 1.7;">
+                Computer Engineer with experience in backend development, IT operations, and workflow risk analysis. 
+                Skilled in Python, Django, REST API development, and database design. Passionate about cybersecurity, 
+                scalable backend systems, and solving complex technical problems.
+            </p>
+
+            
+            <div class="contact-action-group">
+                <a href="mailto:marcgilbertlim1@gmail.com" class="btn btn-split-main">Send Email ✉️</a>
+                <button id="copy-email-btn" class="btn-split-side" title="Copy Address to Clipboard">📋 Copy</button>
+            </div>
+        
+            <a href="#" class="btn btn-secondary" download style="margin-top: 1rem; vertical-align: middle;">Download Resume ⬇️</a>
+            <div style="margin-top: 1.5rem;">
+                <a href="https://www.linkedin.com/in/marclimcpe/" target="_blank" style="color: var(--accent-color); text-decoration: none; margin-right: 1.5rem; font-weight: 500;">LinkedIn ↗</a>
+                <a href="https://github.com/ImLimmy" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">GitHub ↗</a>
+            </div>
+        </header>
+
+<!-- Interactive API Inspector Sandbox -->
+<section id="api-inspector" style="margin-bottom: 3rem;">
+    <h2>Live API Response Sandbox</h2>
+    <p style="margin-bottom: 1rem; opacity: 0.85;">Interact with my developer profile schema via standard mockup microservice endpoints:</p>
+    
+    <div class="api-sandbox">
+        <div class="api-header">
+            <div class="api-dot"></div>
+            <div class="api-dot"></div>
+            <div class="api-dot"></div>
+        </div>
+        <div class="api-tabs">
+            <button class="api-tab-btn active" data-endpoint="profile">GET /v1/profile</button>
+            <button class="api-tab-btn" data-endpoint="metrics">GET /v1/metrics</button>
+            <button class="api-tab-btn" data-endpoint="routing">GET /v1/topology</button>
+        </div>
+        <pre class="api-response-block"><code id="api-json-render">{
+    "status": 200,
+    "endpoint": "/api/v1/profile/marclim",
+    "payload": {
+        "name": "Marc Gilbert Lim",
+        "role": "Computer Engineer / Backend Specialist",
+        "regional_node": "Manila, PH",
+        "security_clearance": "Level_4_Consultant",
+        "active_sockets": ["Python", "Django", "PostgreSQL", "Linux"]
+    }
+}</code></pre>
+    </div>
+</section>
+        <!-- Core Tech Snapshot Section -->
+        <section id="tech-snapshot" style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.3rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem; border-bottom: none; padding-bottom: 0;">
+                Core Toolkit
+            </h2>
+            <div class="skills-container">
+                <span class="skill-tag" data-skill="python">Python</span>
+                <span class="skill-tag" data-skill="django">Django / DRF</span>
+                <span class="skill-tag" data-skill="postgresql">PostgreSQL</span>
+                <span class="skill-tag" data-skill="api">RESTful APIs</span>
+                <span class="skill-tag" data-skill="linux">Linux Systems</span>
+                <span class="skill-tag" data-skill="security">Network Security</span>
+            </div>
+        </section>
+
+        <!-- Featured Work Preview (Top 2 Modules) -->
+        <section id="work-preview" style="margin-bottom: 3rem;">
+            <h2>Featured System Architecture</h2>
+            <p style="margin-bottom: 1.5rem; opacity: 0.85;">Selected highlights from my core module contributions in larger enterprise environments:</p>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="card project-card" data-skills="python django postgresql api">
+                    <h3>Inventory System Core Module</h3>
+                    <div class="company">Django | PostgreSQL</div>
+                    <p style="font-size: 0.95rem; margin-top: 0.5rem;">Engineered the data persistence layer and secure transaction log modules to resolve asset inconsistencies within a centralized enterprise system.</p>
+                    <button class="run-btn" data-target="https://github.com/ImLimmy?tab=repositories">Execute Binary</button>
+                    <div class="project-terminal-overlay"></div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="card project-card" data-skills="python linux security">
+                    <h3>MMORPG Socket Architecture</h3>
+                    <div class="company">Python | Multi-threading</div>
+                    <p style="font-size: 0.95rem; margin-top: 0.5rem;">Designed custom multi-threaded network listeners and data routing components built for real-time, low-latency client-server state synchronization.</p>
+                    <button class="run-btn" data-target="https://github.com/ImLimmy?tab=repositories">Execute Binary</button>
+                    <div class="project-terminal-overlay"></div>
+                </div>
+            </div>
+            <div style="margin-top: 1.5rem; text-align: right;">
+                <a href="projects.html" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">View Full Case Studies & Experience →</a>
+            </div>
+        </section>
+
+        <!-- Current Focus / "Now" Section -->
+        <section id="current-focus" style="margin-bottom: 4rem;">
+            <h2>What I'm Doing Now</h2>
+            <div class="card" style="border-left: 4px solid var(--accent-color); background: var(--card-bg);">
+                <p style="margin-bottom: 0.75rem;">Outside of formal roles, my active engineering objectives include:</p>
+                <ul style="padding-left: 1.25rem; line-height: 1.8;">
+                    <li>🛠️ <strong>Building:</strong> Scalable API blueprints and hardening backend frameworks using custom python scripts.</li>
+                    <li>📚 <strong>Studying:</strong> Enterprise systems security fundamentals and OWASP top 10 mapping for server environments.</li>
+                    <li>⚙️ <strong>Tinkering:</strong> Configuring minimal Linux distribution builds and investigating local network traffic optimization.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="padding-bottom: 30px; text-align: center;">
+            <p>&copy; 2026 Lim. Built with HTML and CSS.</p>
+        </footer>
+    </div>
+
+    <!-- Floating Scroll to Top Target -->
+    <button id="scroll-top-btn" title="Return to Top" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: none; background: var(--accent-color); color: white; border: none; padding: 0.6rem 0.9rem; border-radius: 4px; cursor: pointer; z-index: 999; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">▲ Top</button>
+    <script src="scripts.js"></script>
+</body>
+</html>

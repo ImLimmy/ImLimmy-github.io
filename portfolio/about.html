@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Skills | Marc Lim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="home.html" class="logo"><strong>Marc Lim</strong></a>
+            
+            <div class="nav-console">
+                <a href="about.html">About</a>
+                <a href="projects.html">Experience & Projects</a>
+                
+                <div class="nav-divider"></div>
+                <button id="raw-toggle">&gt;_ JSON</button>
+                
+                <div class="nav-divider"></div>
+                
+                <div class="system-health-bar">
+                    <div class="pulse-dot"></div>
+                    <span>SYS_OK // <span id="system-ping">16ms</span></span>
+                </div>
+                
+                <div class="nav-divider"></div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Brief Bio Section -->
+        <section id="bio">
+            <h2>About Me</h2>
+            <p>I am a Computer Engineering graduate operating at the intersection of software engineering and systems infrastructure. My primary focus is building clean, maintainable, and scalable back-end architectures, alongside managing secure IT environments.</p>
+        </section>
+
+        <!-- Structured Technical Skills Section -->
+        <section id="skills">
+            <h2>Technical Stack & Expertise</h2>
+            
+            <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-color);">Backend</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag" data-skill="python">Python</span>
+                        <span class="skill-tag" data-skill="django">Django</span>
+                        <span class="skill-tag" data-skill="django">Django REST Framework</span>
+                        <span class="skill-tag" data-skill="api">API Development</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-color);">Database</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag" data-skill="postgresql">PostgreSQL</span>
+                        <span class="skill-tag" data-skill="mysql">MySQL</span>
+                        <span class="skill-tag" data-skill="database">Database Optimization</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-color);">Tools & Systems</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag" data-skill="git">Git & GitHub</span>
+                        <span class="skill-tag" data-skill="script">Google Apps Script</span>
+                        <span class="skill-tag" data-skill="linux">Linux</span>
+                        <span class="skill-tag" data-skill="security">Network Troubleshooting</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-color);">Security</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag" data-skill="security">OWASP Top 10</span>
+                        <span class="skill-tag" data-skill="security">Vulnerability Assessment</span>
+                        <span class="skill-tag" data-skill="security">System Hardening</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Technical Certifications & Training</h2>
+            <div class="cert-scroll-container">
+                
+                <div class="card cert-card">
+                    <div>
+                        <h3 style="font-size: 1.1rem; line-height: 1.3;">CCNAv7: Enterprise Networking, Security, and Automation</h3>
+                        <div class="company" style="margin-bottom: 0.5rem;">Cisco Networking Academy</div>
+                        <p style="font-size: 0.85rem; line-height: 1.4; opacity: 0.8;">Validated training in enterprise network architectures, WAN technologies, access control lists (ACLs), security mechanisms, and automation.</p>
+                    </div>
+                    <img src="assets/CCNAv7 Enterprise Networking, Security, and Automation.png" class="zoomable-img" alt="CCNAv7 Enterprise">
+                </div>
+
+                <div class="card cert-card">
+                    <div>
+                        <h3 style="font-size: 1.1rem; line-height: 1.3;">CCNAv7: Switching, Routing, and Wireless Essentials</h3>
+                        <div class="company" style="margin-bottom: 0.5rem;">Cisco Networking Academy</div>
+                        <p style="font-size: 0.85rem; line-height: 1.4; opacity: 0.8;">Hands-on proficiency in configuring and troubleshooting routers and switches, implementing VLANs, inter-VLAN routing, and wireless protocols.</p>
+                    </div>
+                    <img src="assets/CCNAv7 Switching, Routing, and Wireless Essentials.png" class="zoomable-img" alt="CCNAv7 Switching">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Bachelor of Science in Computer Engineering</h3>
+                <div class="company">Technological Institute of the Philippines – Manila</div>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">2019 – 2023</p>
+                <p>Core focus on computer networks, systems architecture, hardware-software integration, and engineering problem-solving methodologies.</p>
+            </div>
+        </section>
+
+        <!-- Future Goals Section -->
+        <section id="goals">
+            <h2>Career Milestones & Future Goals</h2>
+            <div class="skills-container">
+                <span class="skill-tag" style="border: 1px solid var(--accent-color); background: transparent;">Backend Engineering</span>
+                <span class="skill-tag" style="border: 1px solid var(--accent-color); background: transparent;">Cybersecurity Operations</span>
+                <span class="skill-tag" style="border: 1px solid var(--accent-color); background: transparent;">Cloud Infrastructure</span>
+                <span class="skill-tag" style="border: 1px solid var(--accent-color); background: transparent;">Ethical Hacking</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="padding-bottom: 30px; text-align: center;">
+            <p>&copy; 2026 Lim. Built with HTML and CSS.</p>
+        </footer>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-target-img" alt="Enlarged credential view">
+    </div>
+
+    <!-- Floating Scroll to Top Target -->
+    <button id="scroll-top-btn" title="Return to Top" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: none; background: var(--accent-color); color: white; border: none; padding: 0.6rem 0.9rem; border-radius: 4px; cursor: pointer; z-index: 999; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">▲ Top</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
