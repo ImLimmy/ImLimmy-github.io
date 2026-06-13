@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience & Projects | Marc Lim</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .repo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .repo-table th, .repo-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .repo-table th {
+            background-color: var(--bg-color);
+            color: var(--accent-color);
+        }
+        .project-meta-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0 0;
+            font-size: 0.925rem;
+        }
+        .project-meta-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        @media (max-width: 600px) {
+            .repo-table, .repo-table tbody, .repo-table tr, .repo-table td, .repo-table th {
+                display: block;
+                width: 100%;
+            }
+            .repo-table tr { margin-bottom: 1rem; border: 1px solid var(--border-color); border-radius: 6px; }
+            .repo-table th { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="home.html" class="logo"><strong>Marc Lim</strong></a>
+            
+            <div class="nav-console">
+                <a href="about.html">About</a>
+                <a href="projects.html">Experience & Projects</a>
+                
+                <div class="nav-divider"></div>
+                <button id="raw-toggle">&gt;_ JSON</button>
+                
+                <div class="nav-divider"></div>
+                
+                <div class="system-health-bar">
+                    <div class="pulse-dot"></div>
+                    <span>SYS_OK // <span id="system-ping">16ms</span></span>
+                </div>
+                
+                <div class="nav-divider"></div>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="project-grid" style="grid-template-columns: 1fr; gap: 2rem;">
+                <!-- Google Role -->
+                <div class="card" style="border-left: 4px solid var(--accent-color);">
+                    <h3>Content Moderator</h3>
+                    <div class="company">Accenture</div>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">2025 – Present</p>
+                    <p>Executing workflow risk analysis, policy interpretation, and process improvements for platform safety. Tasked with operational excellence, threat/escalation handling, and leveraging system insight to optimize internal content mitigation paths.</p>
+                </div>
+
+                <!-- CyberSecurity -->
+                <div class="card">
+                    <h3>CyberSecurity Consultant</h3>
+                    <div class="company">(Confidential Client)</div>
+                    <p>Worked on security assessments, system hardening, threat analysis, and security operations under an NDA. Responsible for protecting systems integrity, auditing data security controls, implementing preventative network safety measures, and driving threat mitigation response.</p>
+                </div>
+
+                <!-- Strongbond -->
+                <div class="card">
+                    <h3>IT Clerk</h3>
+                    <div class="company">Strongbond Philippines</div>
+                    <p>Maintained enterprise hardware setups and network infrastructure integrity while handling daily system troubleshooting operations to maximize operational uptime.</p>
+                </div>
+
+                <!-- AlconPH -->
+                <div class="card">
+                    <h3>Back-End Developer</h3>
+                    <div class="company">AlconPH / ITSmart</div>
+                    <p>Engineered server-side architectures and optimized relational database management structures. Specialized in designing, building, and maintaining robust RESTful APIs using Django REST Framework to ensure seamless front-end integration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Case Studies Section -->
+        <section id="featured-projects">
+            <h2>Featured Engineering Projects & Case Studies</h2>
+            <p style="margin-bottom: 1.5rem; opacity: 0.85;">Technical deep dives into core system architecture modules:</p>
+            
+            <div class="project-grid" style="grid-template-columns: 1fr; gap: 2rem;">
+                <!-- Project 1 -->
+                <div class="card project-card" data-skills="python django postgresql api">
+                    <h3>Inventory Management System (Core Module)</h3>
+                    <div class="company">Python | Django | PostgreSQL</div>
+                    <p style="margin-top: 0.5rem;"><strong>Context:</strong> Designed the data persistence and transactional engine logic to automate item logs within a centralized inventory workflow.</p>
+                    <ul class="project-meta-list">
+                        <li>⚡ <strong>Engineering Trade-off:</strong> Prioritized PostgreSQL database transactions over standard file logs to guarantee atomic operations (ACID compliance), preventing partial write corruption.</li>
+                        <li>🛡️ <strong>Security Spec:</strong> Implemented strict validation schemas on API payloads to eliminate cross-site scripting and SQL injection vulnerabilities.</li>
+                        <li>⚙️ <strong>Tooling Matrix:</strong> Developed via Django ORM, validated contract endpoints using Postman, and managed deployment profiles within isolated virtual environments.</li>
+                    </ul>
+                    <button class="run-btn" data-target="https://github.com/ImLimmy?tab=repositories">Execute Binary</button>
+                    <div class="project-terminal-overlay"></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card" data-skills="python linux security">
+                    <h3>MMORPG Core Socket Architecture (PoC)</h3>
+                    <div class="company">Python | Network Sockets | Multi-threading</div>
+                    <p style="margin-top: 0.5rem;"><strong>Context:</strong> Created a highly efficient, lightweight backend network handler built to synchronize user position matrices in real-time.</p>
+                    <ul class="project-meta-list">
+                        <li>⚡ <strong>Engineering Trade-off:</strong> Deployed low-level Python socket listeners and raw TCP buffers rather than traditional HTTP polling to drop connection overhead.</li>
+                        <li>🛡️ <strong>Security Spec:</strong> Hardened packet unpacking pipelines with strict data boundary constraints to mitigate risks of remote buffer overflow attacks.</li>
+                        <li>⚙️ <strong>Tooling Matrix:</strong> Leveraged standard threading libraries, tested network limits locally with concurrent traffic simulation scripts, and logged state anomalies.</li>
+                    </ul>
+                    <button class="run-btn" data-target="https://github.com/ImLimmy?tab=repositories">Execute Binary</button>
+                    <div class="project-terminal-overlay"></div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card" data-skills="python django mysql api">
+                    <h3>Personal Finance Ledger API</h3>
+                    <div class="company">Python | Django REST Framework | MySQL</div>
+                    <p style="margin-top: 0.5rem;"><strong>Context:</strong> Structured the core ledger endpoint architecture to calculate real-time balance metrics across isolated asset categories.</p>
+                    <ul class="project-meta-list">
+                        <li>⚡ <strong>Engineering Trade-off:</strong> Utilized precise decimal fields over floats to maintain flawless arithmetic processing pipelines without running into rounding errors native to binary computing structures.</li>
+                        <li>🛡️ <strong>Security Spec:</strong> Hardened transaction routes using explicit object-level permission bindings, validating that incoming request parameters match user tokens precisely.</li>
+                        <li>⚙️ <strong>Tooling Matrix:</strong> Integrated Git branch tracking for clean component isolated features, using Django Native TestCases to automate calculations verification.</li>
+                    </ul>
+                    <button class="run-btn" data-target="https://github.com/ImLimmy?tab=repositories">Execute Binary</button>
+                    <div class="project-terminal-overlay"></div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card project-card" data-skills="python django script">
+                    <h3>Agricultural Operations Analytics Engine</h3>
+                    <div class="company">Python | Django | Google Apps Script</div>
+                    <p style="margin-top: 0.5rem;"><strong>Context:</strong> Built data normalization pipelines to pull, transform, and map agricultural overhead variables into centralized dashboards.</p>
+                    <ul class="project-meta-list">
+                        <li>⚡ <strong>Engineering Trade-off:</strong> Relied on webhook triggers instead of standard chron-jobs to sync external data points instantly, keeping server CPU utilization idling low until prompted.</li>
+                        <li>🛡️ <strong>Security Spec:</strong> Encrypted authorization access secrets safely within decoupled environments configs rather than letting clear-text API keys trail within scripts.</li>
+                        <li>⚙️ <strong>Tooling Matrix:</strong> Combined Google Apps Webhook handlers with back-end database routes to bridge infrastructure tiers seamlessly.</li>
+                    </ul>
+                    <button class="run-btn" data-target="https://github.com/ImLimmy?tab=repositories">Execute Binary</button>
+                    <div class="project-terminal-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Integration Table Section -->
+        <section id="github-repos">
+            <h2>Curated Repositories & Highlights</h2>
+            <div class="card">
+                <p>A quick-access matrix mapping the technical scopes and source targets for my foundational work:</p>
+                <table class="repo-table">
+                    <thead>
+                        <tr>
+                            <th>Module Component</th>
+                            <th>Target Architectural Scope</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Inventory Platform</strong></td>
+                            <td>Core Module Architecture & Database Schema</td>
+                            <td><a href="https://github.com/ImLimmy?tab=repositories" target="_blank" style="color: var(--accent-color);">Codebase ↗</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Finance API Tracker</strong></td>
+                            <td>Ledger API Engine & Transaction Logic</td>
+                            <td><a href="https://github.com/ImLimmy?tab=repositories" target="_blank" style="color: var(--accent-color);">Codebase ↗</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chicken Farm System</strong></td>
+                            <td>Operations Dashboard & Analytics Module</td>
+                            <td><a href="https://github.com/ImLimmy?tab=repositories" target="_blank" style="color: var(--accent-color);">Codebase ↗</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>MMORPG Engine Block</strong></td>
+                            <td>Multi-threaded Socket Pipeline (PoC Blueprint)</td>
+                            <td><a href="https://github.com/ImLimmy?tab=repositories" target="_blank" style="color: var(--accent-color);">Codebase ↗</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="padding-bottom: 30px; text-align: center;">
+            <p>&copy; 2026 Lim. Built with HTML and CSS.</p>
+        </footer>
+    </div>
+
+    <!-- Floating Scroll to Top Target -->
+    <button id="scroll-top-btn" title="Return to Top" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: none; background: var(--accent-color); color: white; border: none; padding: 0.6rem 0.9rem; border-radius: 4px; cursor: pointer; z-index: 999; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">▲ Top</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
