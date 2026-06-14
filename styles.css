@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth !important; /* Enforces smooth scrolling across all browsers */
+}
+
 /* Eradicate default browser spacing causing sticky jitter */
 html, body {
     margin: 0;

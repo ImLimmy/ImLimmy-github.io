@@ -256,9 +256,9 @@ if (scrollTopBtn) {
     });
 
     scrollTopBtn.addEventListener('click', () => {
-        const scrollOptions = { top: 0, behavior: 'smooth' };
-        window.scrollTo(scrollOptions);
-        document.documentElement.scrollTo(scrollOptions);
-        document.body.scrollTo(scrollOptions);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }
